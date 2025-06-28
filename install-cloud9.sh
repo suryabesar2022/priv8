@@ -70,7 +70,7 @@ sudo docker run -d \
   --name=Priv8-Tools \
   -e USERNAME=$USERNAME \
   -e PASSWORD=$PASSWORD \
-  -p 6969:6969 \
+  -p 8000:8000 \
   lscr.io/linuxserver/cloud9:latest
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container is running with Jet Theme."
@@ -121,7 +121,7 @@ fi
 print_message "$BLUE" "==========================================="
 print_message "$GREEN" "🎉 Cloud9 Setup Completed Successfully 🎉"
 print_message "$BLUE" "==========================================="
-print_message "$YELLOW" "🌟 Access Cloud9 at: http://$PUBLIC_IP:6969"
+print_message "$YELLOW" "🌟 Access Cloud9 at: http://$PUBLIC_IP:8000"
 print_message "$YELLOW" "🔑 Username: $USERNAME"
 print_message "$YELLOW" "🔑 Password: $PASSWORD"
 print_message "$YELLOW" "=========================================="
